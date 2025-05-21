@@ -1,1 +1,76 @@
-/* Code goes here */
+/* css/style.css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ------------------------------------------- */
+/* Boot up and variables */
+:root {
+  --black: #353935;
+  --green: #98fb98;
+  --lightgrey: rgb(172, 161, 161);
+  --font-body: "Roboto", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --font-size: 1rem;
+  --gap: 0.5rem;
+  --rem1: 1rem;
+  --rem2: 2rem;
+  --rem3: 3rem;
+  --rem4: 4rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------- */
+/* Utilities */
+
+.br8 {
+  border-radius: 8px;
+}
+
+.m1 {
+  margin: 1rem;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
+
+.btn1 {
+  background-color: rgb(122, 12, 12);
+  padding: var(--rem1);
+  color: var(--lightgrey);
+}
+
+/* ------------------------------------------- */
+/* Global structure */
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(152, 158, 203, 1) 0%,
+    rgba(238, 174, 147, 1) 100%
+  );
+  min-height: 100vh;
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  font-family: var(--font-display);
+}
+main {
+  width: 100%;
+}
+
+/* ------------------------------------------- */
+/* other styles */
