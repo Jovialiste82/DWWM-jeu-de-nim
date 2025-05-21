@@ -10,7 +10,22 @@
     <header>
       <h1>Jeu De Nim</h1>
     </header>
-    <main></main>
+    <main>
+      <section id="nim-game">
+        <div class="nim-game-container">
+          <article class="nim-game-block">
+            <h2>Nombres d'allumettes:</h2>
+            <div id="matches-count">20</div>
+            <form id="user-selection-form">
+              <label for="">Votre selection</label>
+              <input type="number" max="3" min="1" />
+              <button class="hidden">Valider</button>
+            </form>
+            <div id="message-display">L'ordi réfléchit...</div>
+          </article>
+        </div>
+      </section>
+    </main>
     <footer><p>Made by Philippe Charpentier</p></footer>
     <script src="/js/script.js"></script>
   </body>
